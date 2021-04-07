@@ -1,0 +1,57 @@
+<style> 
+    .container { 
+        width: 70%; 
+        margin: auto; 
+        text-align: center; 
+    } 
+  
+    .dice { 
+        text-align: center; 
+        display: inline-block; 
+        margin: 10px; 
+    } 
+  
+    body { 
+        
+        margin: 0; 
+        background-color: white;
+    } 
+  
+    h1 { 
+        margin: 30px; 
+        
+         
+        font-size: 4.5rem; 
+        color: black; 
+        text-align: center; 
+    } 
+  
+    p { 
+        font-size: 2rem; 
+        color: white; 
+         
+    } 
+  
+    img { 
+        width: 100%; 
+    } 
+  
+    .bottom { 
+        padding-top: 30px; 
+    } 
+  
+    .butn { 
+        background: yellow; 
+        
+        border-radius: 7px; 
+        color: red; 
+        font-size: 30px; 
+        padding: 16px 25px 16px 25px; 
+        text-decoration: none; 
+    } 
+  
+    .butn:hover { 
+        background: white; 
+        text-decoration: none; 
+    } 
+</style> 

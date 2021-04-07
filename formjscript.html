@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+        <meta name="vieport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="bootstrap.css">
+  <script src="jquery.js"></script>
+  <script src="bootstrap.js"></script>
+<title> REGITRATION FORM </title>
+</head>
+<body style="background-color: yellow">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Web programming</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="harshil.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://www.w3schools.com/whatis/">About</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Examples
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="india.html">Mapping</a></li>
+            <li><a class="dropdown-item" href="t2.html">Tables and Lists</a></li>
+            <li><a class="dropdown-item" href="javascript.html">Bulb</a></li>
+              <li><a class="dropdown-item" href="register.html">Register form</a></li>
+              <li><a class="dropdown-item" href="layout.html">Layout</a></li>
+            <li><a class="dropdown-item" href="dice.html">Dice Game</a></li>
+            <li><a class="dropdown-item" href="form2.html">Register form with validation</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+         <div class="container-fluid">
+    <a class="navbar-brand" href="practicle.html">Practicles</a>
+       
+        
+      </ul>
+      <form class="d-flex " >
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<form name="myform" method="post" onsubmit="return validate()">
+Name: <input type="text" name="name">
+<br>
+<br>
+password: <input type="password" name="password">
+<br>
+<br>
+phone no: <input type="number" name="phone">
+<br>
+<br>
+Email: <input type="password" name="email">
+<br>
+<br>
+<br>
+ Hobby: <input type="checkbox"    name="hobby">singing 
+        <input type="checkbox"    name="hobby">reading 
+        <input type="checkbox"    name="hobby">cricket 
+        <input type="checkbox"    name="hobby">movies
+<br>
+<br>
+
+<input type="submit" name="submit" value="submit">
+</form>
+<script type="text/javascript">
+  function validate()
+  {
+    var x = document.forms["myform"]["name"].value;
+    var name=document.myform.name.value;
+    var password=document.myform.password.value;
+    var phone=document.myform.phone.value;
+    var email=document.myform.email.value;
+    if(x == "")
+    {
+      alert("name must be filled");
+      return false;
+    }
+    if(password == "")
+    {
+      alert("name must be filled");
+      return false;
+    }
+    if(phone == "")
+    {
+      alert("name must be filled");
+      return false;
+    }
+    else if(phone.length<10)
+    {
+      alert("phone no must be 10 digits");
+      return false;
+    }
+    else if(phone.length>10)
+    {
+      alert("phone no must be 10 digits");
+      return false;
+    }
+
+    if(email == "")
+    {
+      alert("name must be filled");
+      return false;
+    }
+    else if(name.length<6)
+    {
+      alert("name must be between 6 to 12 characters");
+      return false;
+    }
+    else if(name.length>12)
+    {
+      alert("name must be between 6 to 12 characters");
+      return false;
+    }
+     else if(name.startsWith("@"))
+    {
+      alert("name  have special character write valid character");
+      return false;
+    }
+    else if(name.startsWith("_"))
+    {
+      alert("name  have special character write valid character");
+      return false;
+    }
+    else if(phone.startsWith("0") || phone.startsWith("1") || phone.startsWith("2") || phone.startsWith("3") || phone.startsWith("4") || phone.startsWith("5"))
+    {
+      alert("phone no should start with 6,7,8,9");
+      return false;
+    }
+    errortext = "";
+    if((myform.hobby[0].checked == false) && (myform.hobby[1].checked == false) && (myform.hobby[2].checked == false) && (myform.hobby[3].checked == false))
+    {
+      alert("please choose hobby");
+      return false;
+    }
+    if (errortext = "") {myform.submit()}
+
+  }
+  
+</script>            
+</body>
+</html>		

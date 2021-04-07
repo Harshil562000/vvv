@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+        <meta name="vieport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="bootstrap.css">
+  <script src="jquery.js"></script>
+  <script src="bootstrap.js"></script>
+<title> REGITRATION FORM </title>
+</head>
+<style>
+ #tb
+ {
+ text-align: center;
+ border: 1px solid black;
+ padding-bottom: 60px;
+ }
+ body
+ {
+ background-image: url(bom.jpg);
+ }
+</style>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Web programming</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="harshil.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://www.w3schools.com/whatis/">About</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Examples
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="india.html">Mapping</a></li>
+            <li><a class="dropdown-item" href="t2.html">Tables and Lists</a></li>
+            <li><a class="dropdown-item" href="javascript.html">Bulb</a></li>
+              <li><a class="dropdown-item" href="register.html">Register form</a></li>
+              <li><a class="dropdown-item" href="layout.html">Layout</a></li>
+            <li><a class="dropdown-item" href="dice.html">Dice Game</a></li>
+            <li><a class="dropdown-item" href="form2.html">Register form with validation</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+         <div class="container-fluid">
+    <a class="navbar-brand" href="practicle.html">Practicles</a>
+       
+        
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+ <center><h3>GANDHI TOURS AND TRAVELS</h3></center>
+<form>
+<center> <h4>ONLINE TICKET BOOKING</h4>
+ <table id="tb">
+ <tr>
+ <td id="fn">First Name</td>
+ <td><input type="text" name="First_Name" maxlength="10"/></td>
+ <td id="ln">Last Name</td>
+ <td><input type="text" name="First_Name" maxlength="10"/></td>
+ </tr>
+ <tr>
+ <td>Date Of Birth</td>
+ <td id="dt"><input type="Date" name="birthday"></td>
+
+ </td>
+ </tr>
+ <tr>
+ <td>Mobile No</td>
+ <td><input type="text" name="Mobile_Number" maxlength="10"></td>
+
+ </tr>
+ <tr>
+ <td>From</td>
+ <td> <select name="From" id="fr">
+ <option value="1">Ahmedabad</option>
+ <option value="2">Vadodra</option>
+ <option value="3">Bhavnagar</option>
+ <option value="4">Junagadh</option>
+ <option value="5">Rajkot</option>
+ <option value="6">Kutch</option>
+ <option value="7">Gandhinagar</option>
+ <option value="8">Surat</option>
+ </select></td>
+ <td>To</td>
+ <td> <select name="To" id="to">
+ <option value="1">Ahmedabad</option>
+ <option value="2">Vadodra</option>
+ <option value="3">Bhavnagar</option>
+ <option value="4">Junagadh</option>
+ <option value="5">Rajkot</option>
+ <option value="6">Kutch</option>
+ <option value="7">Gandhinagar</option>
+ <option value="8">Surat</option>
+ </select></td>
+ </tr>
+ <tr>
+ <td>Bus Types</td>
+ <td><select name="bus" id="ty">
+ <option value="1">AC</option>
+ <option value="2">NON AC</option>
+ <option value="3">AC SLEEPER</option>
+ <option value="4">NON AC SLEEPER</option>
+
+
+ </select>
+ </td>
+ </tr>
+ <tr>
+ <td>Arrival date</td>
+ <td id="dt"><input type="Date" name="arrival"></td>
+ <td>Departure date</td>
+ <td id="dt"><input type="Date" name="departure"></td>
+
+ </tr>
+ <tr>
+ <td>No Of Person</td>
+ <td ><input type="text" name="persons"></td>
+ </tr>
+ <tr>
+ <td>Email</td>
+ <td ><input type="text" name="persons"></td>
+ </tr>
+ <tr>
+ <td>Payment Method</td>
+ <td>
+ <input type="radio" name="Payment" value="Paytym">Paytym
+ <input type="radio" name="Payment" value="Paypal">Paypal
+ <input type="radio" name="Payment" value="SBI">SBI
+ </td>
+ </tr>
+ <tr>
+ <td>
+ Identity Proof
+ </td>
+ <td>
+ <input type="radio" name="Identity Proof" value="Aadhar card">Aadhar card
+
+ <input type="radio" name="Identity Proof" value="Pan card">Pan card
+
+ </td>
+
+ </tr>
+ <tr>
+ <td>
+ <a href="submit.html">
+ <button id="button1">book now</button></a>
+
+ <a href="form.html">
+ <button id="button1">reset</button></a>
+
+ </td>
+ </tr>
+ </table></center>
+
+</form>
+
+</body>
+</html>
